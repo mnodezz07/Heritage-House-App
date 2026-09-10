@@ -50,12 +50,13 @@ function ProjectList() {
     <div>
         <form onSubmit={handleSubmit}>
             <label >Project Name:</label>
-            <input className="form-control" name="title" value={newProject.title} onChange={handleChange} />
+            <input className="form-control" name="title" value={newProject.title} onChange={handleChange} placeholder="Enter project name"/>
             
             <br />
 
             <label >Description:</label>
-            <input className="form-control" name="description" value={newProject.description} onChange={handleChange} />
+            <input className="form-control" name="description" value={newProject.description} onChange={handleChange} placeholder="Enter project description"
+              rows="5"/>
             
             <br />
 
